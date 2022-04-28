@@ -1,0 +1,14 @@
+[features]
+seeds = false
+[programs.localnet]
+metaplex_anchor_nft = "7eN7nDwLgXvEdJ4u6q2p4uZgxfXCkLRFgBADskyG5Lj5"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "localnet"
+wallet = "/Users/anoushkkharangate/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
