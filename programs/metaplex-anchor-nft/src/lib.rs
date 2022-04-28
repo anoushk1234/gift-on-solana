@@ -155,6 +155,7 @@ pub struct MintGift<'info> {
 pub struct RedeemGift<'info> {
     #[account(mut)]
     pub mint_authority: Signer<'info>,
+    /// CHECK: This is not dangerous because we don't read or write from this account
     #[account(mut)]
     pub mint: UncheckedAccount<'info>,
     /// CHECK: This is not dangerous because we don't read or write from this account
